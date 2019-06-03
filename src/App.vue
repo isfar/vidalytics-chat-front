@@ -1,17 +1,20 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <Chatbox />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Chatbox from './components/Chatbox.vue'
+import Vue from "vue";
+import VueResource from 'vue-resource';
+
+Vue.use(VueResource);
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Chatbox
   }
 }
 </script>
